@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.nav {
+    justify-content: center;
+}
+
+.nav-link {
+    margin: 0 10px;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Home.css */
+.go-back-btn {
+  background-color: #007bff; /* Bootstrap blue color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.go-back-btn:hover {
+  background-color: #0056b3; /* Darker blue for hover effect */
+}

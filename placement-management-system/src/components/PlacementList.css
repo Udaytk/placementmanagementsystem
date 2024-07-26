@@ -1,0 +1,122 @@
+/* PlacementList.css */
+.placement-list-container {
+  padding: 2em;
+}
+
+.placement-list-header {
+  background: linear-gradient(135deg, #ffae00, #7e03aa);
+  color: white;
+  border-radius: 10px;
+  padding: 1em;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center; /* Center align cards horizontally */
+}
+
+.placement-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 3em;
+  width: 300px;
+  text-align: center;
+  margin:20px;
+}
+
+.placement-card h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.placement-card p {
+  margin: 0.5em 0;
+}
+
+.btn-donate {
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: hsla(194 100% 69% / 1);
+  --btn-bg-2: hsla(217 100% 56% / 1);
+  --btn-bg-color: hsla(360 100% 100% / 1);
+  --radii: 0.5em;
+  cursor: pointer;
+  padding: 0.9em 1.4em;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: var(--size, 1rem);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(
+    325deg,
+    var(--btn-bg-2) 0%,
+    var(--btn-bg-1) 55%,
+    var(--btn-bg-2) 90%
+  );
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5),
+    0px 5px 5px -1px rgba(58, 125, 233, 0.25),
+    inset 4px 4px 8px rgba(175, 230, 255, 0.5),
+    inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+.btn-donate:hover {
+  background-position: right top;
+}
+
+.btn-donate:is(:focus, :focus-visible, :active) {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-donate {
+    transition: linear;
+  }
+}
+.placement-list-container {
+  padding: 2em;
+}
+
+.placement-list-header h1 {
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.placement-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1em;
+  width: calc(33.333% - 2em);
+  box-sizing: border-box;
+}
+
+.btn-donate {
+  background: linear-gradient(325deg, #00bfff, #1e90ff);
+  color: white;
+  border: none;
+  padding: 0.9em 1.4em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-donate:hover {
+  background: linear-gradient(325deg, #1e90ff, #00bfff);
+}
+
+.go-back-btn {
+  margin-top: 1em;
+}
